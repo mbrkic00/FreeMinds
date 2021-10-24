@@ -1,0 +1,9 @@
+{
+  "short_name": "FreeMinds",
+  "name": "A free online learning platform",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
