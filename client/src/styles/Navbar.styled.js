@@ -34,6 +34,7 @@ export const StyledNavbar = styled.div`
       margin-right: calc(100vw * 0.025);
       font-size: larger;
       cursor: pointer;
+      color: ${({ theme }) => theme.colors.blackBrown};
 
       &:hover {
          color: white;

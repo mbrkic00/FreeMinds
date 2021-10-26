@@ -6,6 +6,7 @@ function Homepage() {
 
    return (
       <StyledHomepage>
+         Hello this is homepage!
       </StyledHomepage>
    );
 }

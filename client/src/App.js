@@ -6,17 +6,25 @@ import { StyledApp } from "./styles/App.styled"
 // ===== Components =====
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
+import Profile from "./components/Profile";
+// ===== React Router =====
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // ===== Main export =====
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <StyledApp>
-        <Navbar />
-        <Homepage />
-      </StyledApp>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <StyledApp>
+          <Navbar />
+          <Switch>
+            <Route path="/" component={Homepage} exact />
+            <Route path="/profile" component={Profile} exact />
+          </Switch>
+        </StyledApp>
+      </ThemeProvider>
+    </Router>
   );
 }
 
