@@ -15,7 +15,7 @@ export const StyledNavbar = styled.div`
       padding: 4px;
       margin-left: 15px;
       font-size: calc(100vh * 0.035);
-      background-color: goldenrod;
+      background-color: rosybrown;
       cursor: pointer;
    }
 
