@@ -1,8 +1,8 @@
 const theme = {
    colors: {
-      beige: "#c6918e",
+      beige: "#F2E1DE",
       blackBrown: "#201e20",
-      tan: "#c56b68"
+      tan: "#F2E1DE"
    }
 }
 
