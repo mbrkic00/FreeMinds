@@ -7,6 +7,7 @@ import { StyledApp } from "./styles/App.styled"
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import Profile from "./components/Profile";
+import AboutUs from "./components/AboutUs";
 // ===== React Router =====
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App() {
           <Switch>
             <Route path="/" component={Homepage} exact />
             <Route path="/profile" component={Profile} exact />
+            <Route path="/about_us" component={AboutUs} exact />
           </Switch>
         </StyledApp>
       </ThemeProvider>
