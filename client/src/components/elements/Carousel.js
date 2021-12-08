@@ -43,20 +43,26 @@ export const Carousel = () => {
     }
   }
 
-   return (
-     <StyledCarousel>
-       <StyledCarouselMainImage>
-         <ArrowKeyLeft onClick={onArrowClickLeft} />
-         <img src={images[count].image} alt={images[count].alt} />
-         <ArrowKeyRight onClick={onArrowClickRight} />
-       </StyledCarouselMainImage>
-       <StyledCarouselImagePreview>
-        {
-          images.map(({image, alt}) => (
-            <img key={alt} src={image} alt={alt} />
-          ))
-        }
-       </StyledCarouselImagePreview>
-     </StyledCarousel>
-   );
+  return (
+    <StyledCarousel>
+      <StyledCarouselMainImage>
+        <ArrowKeyLeft onClick={onArrowClickLeft} />
+        <img src={images[count].image} alt={images[count].alt} />
+        <ArrowKeyRight onClick={onArrowClickRight} />
+      </StyledCarouselMainImage>
+      <StyledCarouselImagePreview>
+      {
+        images.map(({image, alt}) => (
+          <img key={alt} src={image} alt={alt} onClick={() => {
+            let imageRegex = /image_([0-9]+)/g;
+            let myRegexp = new RegExp(imageRegex, "g");
+            let match = myRegexp.exec(alt);
+            let correctNumber = parseInt(match[1]) - 1;
+            setCount(correctNumber);
+          }}/>
+        ))
+      }
+      </StyledCarouselImagePreview>
+    </StyledCarousel>
+  );
 }
