@@ -46,7 +46,7 @@ export const StyledCarouselImagePreview = styled.div`
   img {
     width: calc(100vw * 0.15);
     height: calc(100vh * 0.15);
-    border: 1px solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-left: calc(100vw * 0.01);
     margin-right: calc(100vw * 0.01);
     transition: 150ms;

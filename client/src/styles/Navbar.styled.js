@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-   background-color: ${({ theme }) => theme.colors.tan};
+   background-color: ${({ theme }) => theme.colors.black};
    height: calc(100vh * 0.075);
-   color: ${({ theme }) => theme.colors.blackBrown};
+   color: ${({ theme }) => theme.colors.shadeWhite};
    display: flex;
    display: flex;
    align-items: center;
@@ -16,7 +16,8 @@ export const StyledNavbar = styled.div`
       padding: 4px;
       margin-left: 15px;
       font-size: calc(100vh * 0.035);
-      background-color: rosybrown;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.black};
       cursor: pointer;
    }
 
@@ -35,13 +36,12 @@ export const StyledNavbar = styled.div`
       margin-right: calc(100vw * 0.025);
       font-size: larger;
       cursor: pointer;
-      color: ${({ theme }) => theme.colors.blackBrown};
+      color: ${({ theme }) => theme.colors.shadeWhite};
       transition-duration: 300ms;
       transition-timing-function: ease-in-out;
 
       &:hover {
-         color: white;
-
+         color: darkGray;
       }
    }
 `
