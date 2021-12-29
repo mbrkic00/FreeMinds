@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import Profile from "./components/Profile";
 import AboutUs from "./components/AboutUs";
+import LogIn from "./components/LogIn";
 // ===== React Router =====
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" component={Homepage} exact />
             <Route path="/profile" component={Profile} exact />
             <Route path="/about_us" component={AboutUs} exact />
+            <Route path="/log_in" component={LogIn} exact />
           </Switch>
         </StyledApp>
       </ThemeProvider>

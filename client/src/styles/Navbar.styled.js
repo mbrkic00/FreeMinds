@@ -11,19 +11,20 @@ export const StyledNavbar = styled.div`
    border-bottom: 1px solid gray;
 
    logo {
-      border: solid 2px;
+      border: solid 1px;
       border-radius: 10px 0px 10px 0px;
       padding: 4px;
       margin-left: 15px;
       font-size: calc(100vh * 0.035);
-      background-color: rosybrown;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.black};
       cursor: pointer;
    }
 
    input {
       width: calc(100vw * 0.3);
       height: calc(100vh * 0.03);
-      border: solid 1.5px;
+      border: solid 1px gray;
       border-radius: 10px;
       outline: none;
       font-size: calc(100vh * 0.02);
@@ -35,11 +36,12 @@ export const StyledNavbar = styled.div`
       margin-right: calc(100vw * 0.025);
       font-size: larger;
       cursor: pointer;
-      color: ${({ theme }) => theme.colors.blackBrown};
+      color: ${({ theme }) => theme.colors.shadeWhite};
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
 
       &:hover {
-         color: white;
-         transition-duration: 400ms;
+         color: darkGray;
       }
    }
 `
