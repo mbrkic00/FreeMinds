@@ -34,6 +34,8 @@ export const CardsParent = styled.div`
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #ffffff8a;
 `
 
 export const Card = styled.div` 
