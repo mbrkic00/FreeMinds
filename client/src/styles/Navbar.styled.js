@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
    background-color: ${({ theme }) => theme.colors.tan};
-   height: calc(100vh * 0.075);
+   // height: calc(100vh * 0.075);
    color: ${({ theme }) => theme.colors.blackBrown};
    display: flex;
    display: flex;
