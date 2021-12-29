@@ -42,12 +42,14 @@ export const Card = styled.div`
         margin-left: 100px;
         margin-right: 100px;
         list-style-type: square;
+        margin-top: -10px;
     }
 
     img {
         width: 50px;
         height: 50px;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     h2 {
@@ -56,5 +58,6 @@ export const Card = styled.div`
 
     ul {
         list-style-type: square;
+        margin-top: -30px;
     }
 `
